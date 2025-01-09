@@ -1,0 +1,11 @@
+
+
+1. jest fib/test.js --watch 
+        (jest command, and file path --watch option will rerun when you save the file, or you can hit enter in terminal to run again)
+
+2. debugger;
+        add to js file after the variables you want to test are set
+        - add manual function call
+        - node inspect reversestring/index.js (example)
+        - continue (to hit debugger)
+        - repl ( to enter repl session and type var names to log them )
