@@ -6,7 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-// ========================= FIRST VERSION
+// FIRST VERSION
 // function reverse(str) {
 //     let newStr = '';
 //     const len = str.length;
@@ -18,8 +18,7 @@
 // }
 
 
-// ========================= THIRD VERSION
-
+// THIRD VERSION
 function reverse(str) {
     let reversed = '';
 
@@ -31,12 +30,14 @@ function reverse(str) {
     return reversed
 }
 
-// ========================= SECOND VERSION
+
+// SECOND VERSION
 // function reverse(str) {
 //     return str.split('').reverse().join('')
 // }
 
-// ========================= FOURTH VERSION
+
+// FOURTH VERSION
 // function reverse(str) {
 //     debugger;
 //     return str.split('').reduce((reversed, char) => {
