@@ -17,18 +17,36 @@
 //       '### '
 //       '####'
 
-function steps(n) {
-    for (let i = 0; i < n; i++) {
-        let result = '';
-        for (let j = 0; j < n; j++) {
-            if (j <= i) {
-                result += '#'
-            } else {
-                result += ' '
-            }
-        }
-        console.log(result);
+// function steps(n) {
+//     for (let i = 0; i < n; i++) {
+//         let result = '';
+
+//         for (let j = 0; j < n; j++) {
+//             if (j <= i) {
+//                 result += '#'
+//             } else {
+//                 result += ' '
+//             }
+//         }
+//         console.log(result);
+//     }
+// }
+
+// recursive 
+function steps(n, row = 0, stair = '') {
+
+    if (row === n) {
+        return;
     }
+
+    if (n === stair.length) {
+        console.log(stair);
+        return steps(n, row + 1);
+    }
+    
+    stair += (stair.length <= row ? '#' : ' ');
+
+    steps(n, row, stair);
 }
 
 module.exports = steps;
